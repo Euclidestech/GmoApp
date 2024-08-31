@@ -11,7 +11,7 @@ def criar_janela_principal():
     janela.title("Gerenciador de Saúde Ocupacional")
     janela.geometry("1300x500")
     janela.maxsize(1366,768)
-    janela.minsize(700,600)
+    janela.minsize(700,500)
     
     
    
