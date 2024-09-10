@@ -137,3 +137,13 @@ def obter_pacientes():
             cursor.close()
             conexao.close()
     return pacientes
+
+def salvar_prontuario(nome, idade, historico, sintomas, diagnostico, prescricao):
+    if nome and idade and historico and sintomas and diagnostico and prescricao:
+        # Lógica para salvar prontuário (ex: banco de dados ou arquivo)
+        print(f"Nome: {nome}, Idade: {idade}, Histórico: {historico}, Sintomas: {sintomas}, Diagnóstico: {diagnostico}, Prescrição: {prescricao}")
+        messagebox.showinfo("Sucesso", "Prontuário salvo com sucesso!")
+    else:
+        messagebox.showerror("Erro", "Preencha todos os campos do prontuário.")
+        
+        
